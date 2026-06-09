@@ -373,6 +373,14 @@ address {
   color: var(--color-muted);
 }
 
+.section-lead {
+  margin-top: 20px;
+  max-width: 40rem;
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  line-height: 1.9;
+}
+
 /* Service */
 .service {
   background: var(--color-gray-bg);
@@ -423,8 +431,8 @@ address {
   line-height: 1.9;
 }
 
-.service-card .text-link {
-  margin-top: 24px;
+.service-card h3 {
+  min-height: 3em;
 }
 
 /* Strength */
@@ -469,6 +477,12 @@ address {
 }
 
 /* Works */
+.works-note {
+  margin: -24px 0 32px;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
 .works-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -544,6 +558,29 @@ address {
   line-height: 2;
 }
 
+.about-info {
+  margin-top: 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-info-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.86rem;
+}
+
+.about-info-row dt {
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.about-info-row dd {
+  color: var(--color-muted);
+}
+
 .about-block .text-link {
   margin-top: 24px;
 }
@@ -590,9 +627,20 @@ address {
 
 .recruit-text {
   margin-top: 16px;
-  max-width: 480px;
+  max-width: 520px;
   font-size: 0.9rem;
   color: var(--color-muted);
+}
+
+.recruit-jobs {
+  margin-top: 16px;
+  padding-left: 1.2em;
+  font-size: 0.88rem;
+  color: var(--color-navy);
+}
+
+.recruit-jobs li + li {
+  margin-top: 6px;
 }
 
 /* Footer */
@@ -612,11 +660,29 @@ address {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.footer-brand address {
+.footer-offices {
   margin-top: 24px;
+  display: grid;
+  gap: 20px;
+}
+
+.footer-office {
   font-size: 0.82rem;
   line-height: 2;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-office strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-office a {
+  color: #fff;
+}
+
+.footer-office a:hover {
+  text-decoration: underline;
 }
 
 .footer-nav {
@@ -641,7 +707,15 @@ address {
 
 .footer-cta {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.footer-contact-note {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: right;
 }
 
 .footer-copy {
@@ -771,5 +845,18 @@ address {
   .news-list li {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .about-info-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .footer-cta {
+    align-items: flex-start;
+  }
+
+  .footer-contact-note {
+    text-align: left;
   }
 }
