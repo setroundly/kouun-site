@@ -3,77 +3,313 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="幸運（kouun）公式サイト" />
-    <title>幸運 | 公式サイト</title>
+    <meta
+      name="description"
+      content="株式会社工運（KOUN）は、重量機器搬入据付・足場仮設・産業廃棄物処理を手がける神奈川県横浜市の建設会社です。"
+    />
+    <title>株式会社 工運 | KOUN Co., Ltd.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-inner">
-        <a href="#" class="logo">幸運</a>
-        <nav class="nav">
-          <a href="#about">会社概要</a>
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <img src="images/logo.gif" alt="株式会社 工運" class="logo-img" />
+        </a>
+
+        <nav class="nav" id="nav" aria-label="メインナビゲーション">
+          <a href="#">トップ</a>
           <a href="#service">事業内容</a>
-          <a href="#contact">お問い合わせ</a>
+          <a href="#strength">工運の強み</a>
+          <a href="#works">実績紹介</a>
+          <a href="#about">会社案内</a>
+          <a href="#recruit">採用情報</a>
         </nav>
+
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">お問い合わせ</a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container hero-inner">
-          <p class="hero-label">Official Website</p>
-          <h1>幸運</h1>
+        <div class="hero-bg">
+          <img src="images/header.png" alt="クレーンによる重量機器搬入工事の現場" />
+        </div>
+        <div class="hero-side hero-side-left">KOUN Co., Ltd.</div>
+        <div class="hero-side hero-side-right">
+          <span>SCROLL</span>
+          <span class="hero-scroll-line"></span>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">運ぶ。支える。<br />未来をつなぐ。</h1>
           <p class="hero-lead">
-            人と人とのつながりから、新しい価値をつくる。
+            重量機器の搬入据付から足場仮設、産業廃棄物処理まで。<br />
+            確かな技術とチームワークで、社会の基盤を支えています。
           </p>
+          <a href="#about" class="hero-link">
+            <span>工運について知る</span>
+            <span class="arrow" aria-hidden="true"></span>
+          </a>
         </div>
       </section>
 
-      <section id="about" class="section">
+      <section id="service" class="section service">
         <div class="container">
-          <h2>会社概要</h2>
-          <dl class="info-list">
-            <div class="info-row">
-              <dt>会社名</dt>
-              <dd>幸運（kouun）</dd>
-            </div>
-            <div class="info-row">
-              <dt>所在地</dt>
-              <dd>（記載予定）</dd>
-            </div>
-            <div class="info-row">
-              <dt>事業内容</dt>
-              <dd>（記載予定）</dd>
-            </div>
-          </dl>
+          <div class="section-heading">
+            <h2 class="section-title-en">SERVICE</h2>
+            <p class="section-title-ja">事業内容</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <path d="M12 52h40M20 52V28l12-8 12 8v24" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M32 20v-8M28 16h8" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M26 36h12M26 42h12" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <p class="service-num">01</p>
+              <h3>重量機器搬入据付工事</h3>
+              <p>
+                病院・工場・商業施設など、各種施設への重量機器の搬入・据付を一貫して対応。安全かつ確実な施工をお約束します。
+              </p>
+              <a href="#" class="text-link">VIEW MORE<span class="arrow" aria-hidden="true"></span></a>
+            </article>
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <path d="M16 52h32M20 52V20h8v32M28 52V12h8v40M36 52V24h8v28" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M12 20h40M12 32h40M12 44h40" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5" />
+                </svg>
+              </div>
+              <p class="service-num">02</p>
+              <h3>足場仮設工事</h3>
+              <p>
+                建築・改修・メンテナンスに必要な足場仮設を、現場の条件に合わせて設計・施工。安全管理を徹底した仮設工事を行います。
+              </p>
+              <a href="#" class="text-link">VIEW MORE<span class="arrow" aria-hidden="true"></span></a>
+            </article>
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <path d="M32 10a18 18 0 1 0 0 36 18 18 0 0 0 0-36z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M22 30l6 6 14-14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                  <path d="M32 46v8M24 54h16" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <p class="service-num">03</p>
+              <h3>産業廃棄物処理</h3>
+              <p>
+                建設現場や工場から発生する産業廃棄物の収集運搬・適正処理を実施。法令に基づいた確実な廃棄物管理を提供します。
+              </p>
+              <a href="#" class="text-link">VIEW MORE<span class="arrow" aria-hidden="true"></span></a>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="service" class="section section-alt">
+      <section id="strength" class="section strength">
         <div class="container">
-          <h2>事業内容</h2>
-          <p class="section-text">
-            事業内容の詳細はこちらに記載します。テキストや画像は後から差し替え可能です。
-          </p>
+          <div class="section-heading section-heading-light">
+            <h2 class="section-title-en">STRENGTH</h2>
+            <p class="section-title-ja">工運の強み</p>
+          </div>
+          <div class="strength-grid">
+            <div class="strength-item">
+              <div class="strength-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M24 6l14 6v12c0 10-6 16-14 18-8-2-14-8-14-18V12l14-6z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M18 24l4 4 8-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>安全第一</h3>
+              <p>徹底した安全教育と現場管理で、事故ゼロを目指した施工を実践しています。</p>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="16" cy="18" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+                  <circle cx="32" cy="18" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+                  <circle cx="24" cy="30" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <h3>豊富な実績</h3>
+              <p>病院・工場・商業施設など、多様な現場での施工実績が私たちの信頼の証です。</p>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="24" cy="24" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M24 14v4M24 30v4M14 24h4M30 24h4" fill="none" stroke="currentColor" stroke-width="2" />
+                  <circle cx="24" cy="24" r="3" fill="currentColor" />
+                </svg>
+              </div>
+              <h3>確かな技術力</h3>
+              <p>熟練の職人と最新の機材で、難易度の高い工事にも柔軟に対応します。</p>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M10 28c0-6 6-12 14-12s14 6 14 12" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M14 28h20M18 32h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M16 22l4-4M32 22l-4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>ワンストップ対応</h3>
+              <p>搬入据付から足場・廃棄物処理まで、一社でまとめてご依頼いただけます。</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section">
+      <section id="works" class="section works">
         <div class="container">
-          <h2>お問い合わせ</h2>
-          <p class="section-text">
-            お問い合わせはメールにて受け付けております。
-          </p>
-          <a class="contact-link" href="mailto:info@example.com">info@example.com</a>
+          <div class="section-heading-row">
+            <div class="section-heading">
+              <h2 class="section-title-en">WORKS</h2>
+              <p class="section-title-ja">実績紹介</p>
+            </div>
+            <a href="#" class="text-link">VIEW ALL<span class="arrow" aria-hidden="true"></span></a>
+          </div>
+          <div class="works-grid">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="images/tamakake.png" alt="病院設備搬入据付工事" />
+              </div>
+              <h3>〇〇病院 設備搬入据付工事</h3>
+              <p class="work-location">神奈川県横浜市</p>
+            </article>
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="images/ashiba.png" alt="オフィスビル足場仮設工事" />
+              </div>
+              <h3>〇〇ビル 足場仮設工事</h3>
+              <p class="work-location">東京都港区</p>
+            </article>
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="images/ashiba2.png" alt="工場機械搬入据付" />
+              </div>
+              <h3>〇〇工場 機械搬入据付</h3>
+              <p class="work-location">千葉県千葉市</p>
+            </article>
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="images/work-04.jpg" alt="産業廃棄物収集運搬" />
+              </div>
+              <h3>〇〇施設 産業廃棄物収集運搬</h3>
+              <p class="work-location">神奈川県藤沢市</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-news">
+        <div class="about-news-grid">
+          <div id="about" class="about-block">
+            <div class="section-heading">
+              <h2 class="section-title-en">ABOUT US</h2>
+              <p class="section-title-ja">会社案内</p>
+            </div>
+            <div class="about-thumb">
+              <img src="images/herumetto.png" alt="株式会社工運のヘルメット" />
+            </div>
+            <p class="about-text">
+              株式会社工運は、平成27年の設立以来、神奈川県横浜市を拠点に重量機器搬入据付・足場仮設・産業廃棄物処理の3事業を展開しています。「運ぶ・支える・未来をつなぐ」を理念に、確かな技術と誠実な対応でお客様の現場を支え続けます。
+            </p>
+            <a href="#" class="text-link">会社情報を見る<span class="arrow" aria-hidden="true"></span></a>
+          </div>
+          <div id="news" class="news-block">
+            <div class="section-heading">
+              <h2 class="section-title-en">NEWS</h2>
+              <p class="section-title-ja">お知らせ</p>
+            </div>
+            <ul class="news-list">
+              <li>
+                <time datetime="2024-05-01">2024.05.01</time>
+                <a href="#">ホームページをリニューアルしました</a>
+              </li>
+              <li>
+                <time datetime="2024-04-15">2024.04.15</time>
+                <a href="#">ゴールデンウィーク休業のお知らせ</a>
+              </li>
+              <li>
+                <time datetime="2024-03-22">2024.03.22</time>
+                <a href="#">新規採用情報を更新しました</a>
+              </li>
+            </ul>
+            <a href="#" class="text-link">VIEW ALL<span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="recruit" class="section recruit">
+        <div class="container recruit-inner">
+          <div>
+            <h2 class="section-title-en">RECRUIT</h2>
+            <p class="section-title-ja">採用情報</p>
+            <p class="recruit-text">
+              私たちと一緒に、社会の基盤を支える仕事をしませんか。経験者・未経験者ともに歓迎します。
+            </p>
+          </div>
+          <a href="#" class="btn btn-outline">採用情報を見る</a>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2026 幸運</p>
+    <footer id="contact" class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo logo-footer">
+            <img src="images/logo.gif" alt="株式会社 工運" class="logo-img logo-img-footer" />
+          </a>
+          <address>
+            〒224-0000<br />
+            神奈川県横浜市都筑区〇〇 0-0-0<br />
+            TEL: 045-000-0000 / FAX: 045-000-0001
+          </address>
+        </div>
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <div class="footer-nav-col">
+            <a href="#service">事業内容</a>
+            <a href="#strength">工運の強み</a>
+            <a href="#works">実績紹介</a>
+          </div>
+          <div class="footer-nav-col">
+            <a href="#about">会社案内</a>
+            <a href="#news">お知らせ</a>
+            <a href="#recruit">採用情報</a>
+          </div>
+        </nav>
+        <div class="footer-cta">
+          <a href="mailto:info@koun.co.jp" class="btn btn-light">
+            お問い合わせ
+            <span class="arrow" aria-hidden="true"></span>
+          </a>
+        </div>
       </div>
+      <p class="footer-copy">&copy; 2024 KOUN Co., Ltd.</p>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
