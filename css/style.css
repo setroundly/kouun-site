@@ -83,19 +83,14 @@ address {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(15, 39, 68, 0.06);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 
 .logo-img {
   height: 96px;
   width: auto;
-  opacity: 0.9;
+  opacity: 0.82;
+  mix-blend-mode: multiply;
+  filter: saturate(0.95);
 }
 
 .nav {
@@ -811,13 +806,9 @@ address {
     --header-height: 88px;
   }
 
-  .logo {
-    padding: 6px 12px;
-    border-radius: 12px;
-  }
-
   .logo-img {
     height: 72px;
+    opacity: 0.88;
   }
 
   .nav {
