@@ -81,12 +81,14 @@ address {
 }
 
 .logo-img {
-  height: 36px;
+  height: 40px;
   width: auto;
 }
 
 .logo-img-footer {
-  filter: brightness(0) invert(1);
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 2px;
 }
 
 .nav {
