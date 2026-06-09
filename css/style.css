@@ -88,9 +88,7 @@ address {
 .logo-img {
   height: 96px;
   width: auto;
-  opacity: 0.82;
-  mix-blend-mode: multiply;
-  filter: saturate(0.95);
+  mix-blend-mode: screen;
 }
 
 .nav {
@@ -808,7 +806,6 @@ address {
 
   .logo-img {
     height: 72px;
-    opacity: 0.88;
   }
 
   .nav {
