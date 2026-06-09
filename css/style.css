@@ -26,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--header-height);
+  scroll-padding-top: calc(var(--header-height) - 24px);
 }
 
 body {
@@ -253,7 +253,7 @@ address {
 .footer,
 .about-block,
 .news-block {
-  scroll-margin-top: var(--header-height);
+  scroll-margin-top: calc(var(--header-height) - 24px);
 }
 
 /* Hero */
