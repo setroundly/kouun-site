@@ -88,7 +88,6 @@ address {
 .logo-img {
   height: 96px;
   width: auto;
-  mix-blend-mode: screen;
 }
 
 .nav {
