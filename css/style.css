@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 20px);
 }
 
 body {
@@ -248,8 +249,12 @@ address {
   transform: translateY(-50%) rotate(45deg);
 }
 
-/* Hero */
-.hero {
+.section,
+.footer,
+.about-block,
+.news-block {
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}
   position: relative;
   min-height: 100vh;
   display: flex;
