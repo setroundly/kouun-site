@@ -264,28 +264,40 @@ address {
   z-index: 0;
 }
 
-.hero-bg img {
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg-media {
+  position: absolute;
+  inset: -8%;
+  will-change: transform;
+  animation: hero-slow-zoom 18s ease-in-out infinite alternate;
+}
+
+.hero-bg-media img {
   width: 100%;
   height: 100%;
+  max-width: none;
   object-fit: cover;
-  transform: scale(1);
-  animation: hero-slow-zoom 28s ease-in-out infinite alternate;
-  will-change: transform;
+  transform: scale(1.05);
 }
 
 @keyframes hero-slow-zoom {
   from {
-    transform: scale(1) translate(0, 0);
+    transform: scale(1) translate3d(0, 0, 0);
   }
   to {
-    transform: scale(1.08) translate(-1.5%, -0.5%);
+    transform: scale(1.1) translate3d(-2%, -1%, 0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-bg img {
-    animation: none;
-    transform: none;
+  .hero-bg-media {
+    animation: hero-slow-zoom 40s ease-in-out infinite alternate;
   }
 }
 
