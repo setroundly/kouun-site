@@ -21,7 +21,7 @@
   --radius: 12px;
   --font-sans: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
   --container: min(1120px, calc(100% - 48px));
-  --header-height: 112px;
+  --header-height: 152px;
 }
 
 html {
@@ -87,7 +87,7 @@ address {
 }
 
 .logo-img {
-  height: 96px;
+  height: 136px;
   width: auto;
 }
 
@@ -702,13 +702,6 @@ address {
   background: #fff;
 }
 
-.recruit-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-}
-
 .recruit-text {
   margin-top: 16px;
   max-width: 520px;
@@ -744,10 +737,15 @@ address {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.footer-brand-name {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+.footer-logo {
+  display: inline-flex;
+}
+
+.logo-img-footer {
+  height: 112px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
 }
 
 .footer-offices {
@@ -992,11 +990,11 @@ address {
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 88px;
+    --header-height: 116px;
   }
 
   .logo-img {
-    height: 72px;
+    height: 100px;
   }
 
   .nav {
@@ -1068,11 +1066,6 @@ address {
   }
 
   .section-heading-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .recruit-inner {
     flex-direction: column;
     align-items: flex-start;
   }
