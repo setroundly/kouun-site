@@ -7,19 +7,34 @@ if (menuToggle && nav) {
     menuToggle.setAttribute("aria-expanded", String(isOpen));
     menuToggle.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
   });
-
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "メニューを開く");
-    });
-  });
 }
+
+function closeMobileNav() {
+  if (!nav || !menuToggle) return;
+  nav.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "メニューを開く");
+}
+
+function handleHeaderNavigation() {
+  closeMobileNav();
+  if (servicePanel?.classList.contains("is-open")) {
+    closeServicePanel();
+  }
+}
+
+document.querySelectorAll(".header a").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    handleHeaderNavigation();
+    if (link.getAttribute("href") === "#") {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
+});
 
 const servicePanel = document.querySelector("#service-panel");
 const servicePanelBody = document.querySelector("#service-panel-body");
-const servicePanelClose = document.querySelector(".service-panel-close");
 
 function fixServicePaths(root) {
   root.querySelectorAll("[src], [href]").forEach((el) => {
@@ -100,12 +115,14 @@ if (servicePanelBody) {
     if (event.target.closest(".js-service-panel-close, .service-page-back")) {
       event.preventDefault();
       closeServicePanel();
+      const backLink = event.target.closest("a");
+      const href = backLink?.getAttribute("href");
+      if (href?.startsWith("#")) {
+        const target = document.querySelector(href);
+        target?.scrollIntoView({ behavior: "smooth" });
+      }
     }
   });
-}
-
-if (servicePanelClose) {
-  servicePanelClose.addEventListener("click", closeServicePanel);
 }
 
 document.addEventListener("keydown", (event) => {
