@@ -277,15 +277,74 @@ address {
   position: absolute;
   inset: -8%;
   will-change: transform;
-  animation: hero-slow-zoom 18s ease-in-out infinite alternate;
+  animation: hero-slow-zoom 22s ease-in-out infinite alternate;
 }
 
-.hero-bg-media img {
+.hero-video-stack {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  max-width: none;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.06);
+  filter: blur(10px) saturate(0.88) contrast(1.04);
+  transition:
+    opacity 1.8s ease,
+    filter 1.8s ease,
+    transform 12s ease;
+  pointer-events: none;
+}
+
+.hero-video.is-active {
+  opacity: 1;
+  transform: scale(1.02);
+  filter: blur(0) saturate(0.95) contrast(1.06);
+}
+
+.hero-video.is-entering {
+  opacity: 1;
+  transform: scale(1.02);
+  filter: blur(0) saturate(0.95) contrast(1.06);
+}
+
+.hero-video.is-leaving {
+  opacity: 0;
+  transform: scale(1.08);
+  filter: blur(12px) saturate(0.82) contrast(1.02);
+}
+
+.hero-fallback {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transform: scale(1.05);
+  transition: opacity 0.6s ease;
+}
+
+.hero-bg-media.is-static .hero-video-stack {
+  display: none;
+}
+
+.hero-bg-media.is-static .hero-fallback {
+  opacity: 1;
+}
+
+.hero-cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 70% 40%, transparent 0%, rgba(22, 34, 56, 0.12) 72%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.22) 100%);
 }
 
 @keyframes hero-slow-zoom {
@@ -298,12 +357,16 @@ address {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .works-salute-img {
+  .hero-bg-media {
     animation: none;
   }
-}
-  .hero-bg-media {
-    animation: hero-slow-zoom 40s ease-in-out infinite alternate;
+
+  .hero-video-stack {
+    display: none;
+  }
+
+  .works-salute-img {
+    animation: none;
   }
 }
 

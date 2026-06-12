@@ -53,8 +53,21 @@
       <section class="hero">
         <div class="hero-bg">
           <div class="hero-bg-media" aria-hidden="true">
-            <img src="images/top/top.png" alt="" />
+            <div class="hero-video-stack">
+              <video
+                class="hero-video is-active"
+                src="images/top.mp4"
+                poster="images/top/top.png"
+                muted
+                playsinline
+                preload="auto"
+              ></video>
+              <video class="hero-video" src="images/top2.mp4" muted playsinline preload="metadata"></video>
+              <video class="hero-video" src="images/top3.mp4" muted playsinline preload="metadata"></video>
+            </div>
+            <img class="hero-fallback" src="images/top/top.png" alt="" />
           </div>
+          <div class="hero-cinematic-overlay" aria-hidden="true"></div>
         </div>
         <div class="hero-content">
           <h1 class="hero-title">運ぶ。支える。<br />未来をつなぐ。</h1>
@@ -338,6 +351,7 @@
       <div class="service-panel-body" id="service-panel-body"></div>
     </div>
 
+    <script src="js/hero-video.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
