@@ -1152,6 +1152,32 @@ address {
   color: rgba(255, 255, 255, 0.55);
 }
 
+.service-page-hero--plain {
+  min-height: auto;
+  background: linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-navy) 60%, #1d4ed8 100%);
+}
+
+.service-page-hero--plain::after {
+  display: none;
+}
+
+.service-page-photo {
+  margin-top: 40px;
+  max-width: 420px;
+}
+
+.service-page-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.service-page--photo-left .service-page-photo {
+  margin-right: auto;
+}
+
 .service-page-content {
   padding: 64px 0 96px;
 }
