@@ -923,6 +923,107 @@ address {
   color: var(--color-navy-dark);
 }
 
+.recruit-qualification {
+  margin-top: 48px;
+  padding: 36px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.recruit-qualification-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.recruit-qualification-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-accent) 100%);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
+}
+
+.recruit-qualification-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.recruit-qualification-lead {
+  margin-top: 22px;
+  font-size: 0.92rem;
+  line-height: 2;
+  color: var(--color-muted);
+}
+
+.recruit-qualification-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+  list-style: none;
+}
+
+.recruit-qualification-highlight {
+  padding: 20px 18px;
+  background: var(--color-gray-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.recruit-qualification-highlight strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+}
+
+.recruit-qualification-highlight span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  line-height: 1.75;
+  color: var(--color-muted);
+}
+
+.recruit-qualification-tags-wrap {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+.recruit-qualification-tags-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-navy);
+}
+
+.recruit-qualification-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+  list-style: none;
+}
+
+.recruit-qualification-tag {
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 999px;
+}
+
 .recruit-culture {
   margin-top: 48px;
   padding: 36px;
@@ -1249,6 +1350,10 @@ address {
   .recruit-benefits-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .recruit-qualification-highlights {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1260,6 +1365,7 @@ address {
     grid-template-columns: 1fr;
   }
 
+  .recruit-qualification,
   .recruit-culture {
     padding: 24px 20px;
   }
