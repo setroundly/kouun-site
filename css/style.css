@@ -293,7 +293,7 @@ address {
   object-fit: cover;
   opacity: 0;
   transform: scale(1.06);
-  filter: blur(10px) sepia(0.42) saturate(0.78) contrast(1.05) brightness(0.92);
+  filter: blur(10px) saturate(1.15) contrast(1.12) brightness(0.82) hue-rotate(-12deg);
   transition:
     opacity 1.8s ease,
     filter 1.8s ease,
@@ -304,19 +304,19 @@ address {
 .hero-video.is-active {
   opacity: 1;
   transform: scale(1.02);
-  filter: blur(0) sepia(0.32) saturate(0.82) contrast(1.08) brightness(0.94);
+  filter: blur(0) saturate(1.35) contrast(1.2) brightness(0.76) hue-rotate(-18deg);
 }
 
 .hero-video.is-entering {
   opacity: 1;
   transform: scale(1.02);
-  filter: blur(0) sepia(0.32) saturate(0.82) contrast(1.08) brightness(0.94);
+  filter: blur(0) saturate(1.35) contrast(1.2) brightness(0.76) hue-rotate(-18deg);
 }
 
 .hero-video.is-leaving {
   opacity: 0;
   transform: scale(1.08);
-  filter: blur(12px) sepia(0.48) saturate(0.72) contrast(1.02) brightness(0.88);
+  filter: blur(12px) saturate(1.05) contrast(1.1) brightness(0.7) hue-rotate(-14deg);
 }
 
 .hero-bg-media.is-static .hero-video-stack {
@@ -330,14 +330,14 @@ address {
   pointer-events: none;
   clip-path: polygon(56% 0, 100% 0, 100% 100%, 36% 100%);
   background:
-    radial-gradient(ellipse at 70% 40%, transparent 0%, rgba(62, 44, 24, 0.14) 72%),
+    radial-gradient(ellipse at 68% 38%, rgba(125, 211, 252, 0.28) 0%, rgba(15, 39, 68, 0.55) 68%),
     linear-gradient(
-      180deg,
-      rgba(255, 244, 228, 0.06) 0%,
-      rgba(120, 88, 48, 0.1) 55%,
-      rgba(255, 248, 236, 0.14) 100%
+      160deg,
+      rgba(56, 189, 248, 0.35) 0%,
+      rgba(30, 64, 175, 0.28) 42%,
+      rgba(15, 39, 68, 0.45) 100%
     );
-  mix-blend-mode: multiply;
+  mix-blend-mode: overlay;
 }
 
 @keyframes hero-slow-zoom {
