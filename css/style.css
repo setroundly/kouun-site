@@ -677,10 +677,7 @@ address {
 .about-section {
   padding: 80px 0;
   background: #fff;
-}
-
-.about-inner {
-  max-width: 720px;
+  text-align: left;
 }
 
 .about-thumb {
