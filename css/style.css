@@ -923,6 +923,81 @@ address {
   color: var(--color-navy-dark);
 }
 
+.recruit-culture {
+  margin-top: 48px;
+  padding: 36px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff7ed 0%, #fff 42%, #eff6ff 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.recruit-culture-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  gap: 32px;
+  align-items: center;
+}
+
+.recruit-culture-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #c2410c;
+  background: #ffedd5;
+  border-radius: 999px;
+}
+
+.recruit-culture-title {
+  margin-top: 16px;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--color-navy-dark);
+}
+
+.recruit-culture-lead {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  line-height: 1.95;
+  color: var(--color-muted);
+}
+
+.recruit-culture-points {
+  margin-top: 18px;
+  padding-left: 1.2em;
+  font-size: 0.86rem;
+  line-height: 1.85;
+  color: var(--color-navy);
+}
+
+.recruit-culture-points li + li {
+  margin-top: 6px;
+}
+
+.recruit-culture-photo {
+  position: relative;
+  margin: 0;
+  transform: rotate(2deg);
+}
+
+.recruit-culture-photo img {
+  width: 100%;
+  border: 6px solid #fff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.recruit-culture-caption {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--color-muted);
+}
+
 .recruit-job-card {
   margin-top: 40px;
   padding: 40px;
@@ -1183,6 +1258,22 @@ address {
 
   .recruit-benefits-grid {
     grid-template-columns: 1fr;
+  }
+
+  .recruit-culture {
+    padding: 24px 20px;
+  }
+
+  .recruit-culture-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .recruit-culture-photo {
+    order: -1;
+    max-width: 320px;
+    margin-inline: auto;
+    transform: rotate(-1deg);
   }
 
   .recruit-job-card,
