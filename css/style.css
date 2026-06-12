@@ -736,8 +736,12 @@ address {
 
 .about-map-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
+}
+
+.about-map-card {
+  min-width: 0;
 }
 
 .about-map-label {
@@ -1295,13 +1299,15 @@ address {
     gap: 4px;
   }
 
+  .service-page-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
   .about-map-grid {
     grid-template-columns: 1fr;
     gap: 32px;
-  }
-
-  .service-page-gallery {
-    grid-template-columns: 1fr;
   }
 }
 
