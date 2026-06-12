@@ -3,7 +3,6 @@
   if (!media) return;
 
   const videos = [...media.querySelectorAll(".hero-video")];
-  const fallback = media.querySelector(".hero-fallback");
   if (!videos.length) return;
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -23,9 +22,6 @@
     videos.forEach((video, i) => {
       video.classList.toggle("is-active", i === index);
     });
-    if (fallback) {
-      fallback.style.opacity = "0";
-    }
   }
 
   function useFallback() {
