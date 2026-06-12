@@ -1026,18 +1026,33 @@ address {
   border-radius: var(--radius);
 }
 
-.recruit-salary-main {
-  font-size: 0.95rem;
+.recruit-salary-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-navy);
+}
+
+.recruit-salary-annual {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--color-navy-dark);
 }
 
 .recruit-salary-amount {
-  display: block;
-  margin-top: 6px;
-  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-size: clamp(1.75rem, 4vw, 2.2rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--color-accent);
+}
+
+.recruit-salary-monthly {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(37, 99, 235, 0.25);
+  font-size: 0.84rem;
+  color: var(--color-muted);
 }
 
 .recruit-salary-notes {
