@@ -16,6 +16,9 @@ function closeMobileNav() {
   menuToggle.setAttribute("aria-label", "メニューを開く");
 }
 
+const servicePanel = document.querySelector("#service-panel");
+const servicePanelBody = document.querySelector("#service-panel-body");
+
 function handleHeaderNavigation() {
   closeMobileNav();
   if (servicePanel?.classList.contains("is-open")) {
@@ -32,9 +35,6 @@ document.querySelectorAll(".header a").forEach((link) => {
     }
   });
 });
-
-const servicePanel = document.querySelector("#service-panel");
-const servicePanelBody = document.querySelector("#service-panel-body");
 
 function fixServicePaths(root) {
   root.querySelectorAll("[src], [href]").forEach((el) => {

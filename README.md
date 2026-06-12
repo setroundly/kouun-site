@@ -13,9 +13,23 @@ kouun-site/
 └── README.md
 ```
 
-## ローカル確認
+## ローカル確認（重要）
 
-`index.html` をブラウザで開くだけで確認できます。
+**Cursor 右側のプレビューでは正しく表示されません。**
+
+### いちばん簡単な方法
+
+1. エクスプローラーで `D:\project\kouun-site` を開く
+2. **`preview.bat`** をダブルクリック
+3. Chrome / Edge が開き、`http://localhost:5500` でサイトが表示されます
+
+`preview.bat` が動かない場合は **`open-index.bat`** をダブルクリックしてください。
+
+### オンラインで見る（GitHub Pages）
+
+https://setroundly.github.io/kouun-site/
+
+※ ローカルで編集した内容は、GitHub に push するまでオンライン版には反映されません。
 
 ## FTPアップロード
 
