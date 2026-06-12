@@ -382,7 +382,7 @@ address {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(255, 248, 238, 0.88);
+  background: rgba(255, 252, 248, 0.9);
   clip-path: polygon(0 0, 56% 0, 36% 100%, 0 100%);
 }
 
@@ -391,7 +391,7 @@ address {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(255, 244, 232, 0.74);
+  background: rgba(255, 250, 246, 0.76);
   clip-path: polygon(56% 0, 66% 0, 46% 100%, 36% 100%);
 }
 
