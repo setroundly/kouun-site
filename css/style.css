@@ -1323,29 +1323,31 @@ body.is-panel-open {
 }
 
 .works-coming-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) min(260px, 34%);
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .works-coming-main {
+  flex: 1 1 360px;
   min-width: 0;
 }
 
 .works-coming-illust {
+  flex: 0 0 220px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 260px;
-  justify-self: end;
+  width: 220px;
+  max-width: 100%;
 }
 
 .works-salute-img {
   display: block;
   width: 100%;
-  max-width: 260px;
+  max-width: 220px;
   height: auto;
   animation: works-salute-bob 3s ease-in-out infinite;
 }
@@ -1606,14 +1608,14 @@ body.is-panel-open {
 
 @media (max-width: 1024px) {
   .works-coming-layout {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .works-coming-illust {
     order: -1;
-    max-width: 220px;
+    flex-basis: auto;
+    width: min(220px, 70%);
     margin-inline: auto;
-    justify-self: center;
     padding-bottom: 0;
   }
 
