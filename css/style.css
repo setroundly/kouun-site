@@ -167,6 +167,11 @@ address {
   padding: 10px 20px;
 }
 
+.btn-lg {
+  padding: 16px 36px;
+  font-size: 0.92rem;
+}
+
 .btn-primary {
   background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-accent) 100%);
   color: #fff;
@@ -858,6 +863,66 @@ address {
   color: var(--color-muted);
 }
 
+.recruit-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-navy-dark);
+}
+
+.recruit-section-lead {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+
+.recruit-benefits {
+  margin-top: 48px;
+}
+
+.recruit-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+  list-style: none;
+}
+
+.recruit-benefit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 18px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.recruit-benefit-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(30, 58, 95, 0.08) 100%);
+  color: var(--color-accent);
+}
+
+.recruit-benefit-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.recruit-benefit-text {
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--color-navy-dark);
+}
+
 .recruit-job-card {
   margin-top: 40px;
   padding: 40px;
@@ -871,17 +936,59 @@ address {
   margin-top: 28px;
 }
 
+.recruit-job-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
 .recruit-job-title {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--color-navy-dark);
-  padding-bottom: 16px;
-  border-bottom: 2px solid var(--color-accent);
+}
+
+.recruit-job-catch {
+  margin-top: 14px;
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--color-accent);
+}
+
+.recruit-job-lead {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.95;
+  color: var(--color-muted);
+}
+
+.recruit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+  list-style: none;
+}
+
+.recruit-tag {
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  background: var(--color-gray-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+}
+
+.recruit-tag--highlight {
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-accent) 100%);
+  border-color: transparent;
 }
 
 .recruit-job-table {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
 .recruit-job-row {
@@ -905,24 +1012,142 @@ address {
 .recruit-job-row dd {
   color: var(--color-muted);
   line-height: 1.9;
+  min-width: 0;
+}
+
+.recruit-job-row--salary {
+  align-items: start;
+}
+
+.recruit-salary-box {
+  padding: 20px 22px;
+  background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: var(--radius);
+}
+
+.recruit-salary-main {
+  font-size: 0.95rem;
+  color: var(--color-navy-dark);
+}
+
+.recruit-salary-amount {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+}
+
+.recruit-salary-notes {
+  margin-top: 14px;
+  padding-left: 1.1em;
+  font-size: 0.84rem;
+  line-height: 1.85;
+  color: var(--color-muted);
+}
+
+.recruit-salary-notes li + li {
+  margin-top: 4px;
+}
+
+.recruit-income {
+  margin-top: 56px;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.recruit-income-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.recruit-income-card {
+  padding: 28px 24px;
+  text-align: center;
+  background: var(--color-gray-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.recruit-income-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.recruit-income-amount {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+
+.recruit-income-num {
+  margin: 0 4px;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-accent);
+}
+
+.recruit-income-note {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  color: var(--color-muted);
 }
 
 .recruit-page-cta {
   margin-top: 48px;
-  padding: 32px;
+  padding: 48px 32px;
   text-align: center;
-  background: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: 16px;
+  background: linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-navy) 55%, #1d4ed8 100%);
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: var(--shadow-md);
 }
 
-.recruit-page-cta p {
+.recruit-cta-title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.recruit-cta-lead {
+  margin-top: 14px;
   font-size: 0.9rem;
-  color: var(--color-muted);
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.78);
 }
 
-.recruit-page-cta .btn {
-  margin-top: 20px;
+.recruit-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.recruit-page-cta .btn-primary {
+  min-width: 200px;
+}
+
+.recruit-page-cta .btn-outline {
+  min-width: 200px;
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+  background: transparent;
+}
+
+.recruit-page-cta .btn-outline:hover {
+  border-color: #fff;
+  color: var(--color-navy-dark);
+  background: #fff;
 }
 
 .recruit-page-back {
@@ -930,14 +1155,55 @@ address {
   margin-top: 40px;
 }
 
+@media (max-width: 1024px) {
+  .recruit-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
-  .recruit-job-card {
+  .recruit-page-content {
+    padding: 48px 0 72px;
+  }
+
+  .recruit-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruit-job-card,
+  .recruit-income {
     padding: 28px 20px;
   }
 
   .recruit-job-row {
     grid-template-columns: 1fr;
     gap: 8px;
+    padding: 16px 0;
+  }
+
+  .recruit-job-row dt {
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    color: var(--color-accent);
+  }
+
+  .recruit-income-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruit-page-cta {
+    padding: 36px 20px;
+  }
+
+  .recruit-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .recruit-page-cta .btn-primary,
+  .recruit-page-cta .btn-outline {
+    width: 100%;
+    min-width: 0;
   }
 }
 
