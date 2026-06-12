@@ -329,7 +329,7 @@ address {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(56% 0, 100% 0, 100% 100%, 36% 100%);
   background:
     radial-gradient(ellipse at 70% 40%, transparent 0%, rgba(62, 44, 24, 0.14) 72%),
     linear-gradient(
