@@ -1337,7 +1337,7 @@ body.is-panel-open {
 }
 
 .works-salute-img {
-  width: min(200px, 100%);
+  width: min(240px, 100%);
   height: auto;
   animation: works-salute-bob 3s ease-in-out infinite;
 }
@@ -1555,7 +1555,7 @@ body.is-panel-open {
 }
 
 .works-teaser-visual .works-salute-img {
-  width: min(180px, 100%);
+  width: min(220px, 100%);
   margin-inline: auto;
 }
 
