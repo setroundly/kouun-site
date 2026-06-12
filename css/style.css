@@ -293,7 +293,7 @@ address {
   object-fit: cover;
   opacity: 0;
   transform: scale(1.06);
-  filter: blur(10px) saturate(0.88) contrast(1.04);
+  filter: blur(10px) sepia(0.42) saturate(0.78) contrast(1.05) brightness(0.92);
   transition:
     opacity 1.8s ease,
     filter 1.8s ease,
@@ -304,19 +304,19 @@ address {
 .hero-video.is-active {
   opacity: 1;
   transform: scale(1.02);
-  filter: blur(0) saturate(0.95) contrast(1.06);
+  filter: blur(0) sepia(0.32) saturate(0.82) contrast(1.08) brightness(0.94);
 }
 
 .hero-video.is-entering {
   opacity: 1;
   transform: scale(1.02);
-  filter: blur(0) saturate(0.95) contrast(1.06);
+  filter: blur(0) sepia(0.32) saturate(0.82) contrast(1.08) brightness(0.94);
 }
 
 .hero-video.is-leaving {
   opacity: 0;
   transform: scale(1.08);
-  filter: blur(12px) saturate(0.82) contrast(1.02);
+  filter: blur(12px) sepia(0.48) saturate(0.72) contrast(1.02) brightness(0.88);
 }
 
 .hero-fallback {
@@ -326,6 +326,7 @@ address {
   height: 100%;
   object-fit: cover;
   transform: scale(1.05);
+  filter: sepia(0.28) saturate(0.85) contrast(1.06) brightness(0.95);
   transition: opacity 0.6s ease;
 }
 
@@ -343,8 +344,14 @@ address {
   z-index: 1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse at 70% 40%, transparent 0%, rgba(22, 34, 56, 0.12) 72%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.22) 100%);
+    radial-gradient(ellipse at 70% 40%, transparent 0%, rgba(62, 44, 24, 0.18) 72%),
+    linear-gradient(
+      180deg,
+      rgba(255, 244, 228, 0.1) 0%,
+      rgba(120, 88, 48, 0.16) 55%,
+      rgba(255, 248, 236, 0.24) 100%
+    );
+  mix-blend-mode: multiply;
 }
 
 @keyframes hero-slow-zoom {
@@ -375,7 +382,7 @@ address {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 248, 238, 0.88);
   clip-path: polygon(0 0, 56% 0, 36% 100%, 0 100%);
 }
 
@@ -384,7 +391,7 @@ address {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 244, 232, 0.74);
   clip-path: polygon(56% 0, 66% 0, 46% 100%, 36% 100%);
 }
 
