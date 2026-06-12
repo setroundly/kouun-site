@@ -724,6 +724,141 @@ address {
   margin-top: 6px;
 }
 
+.recruit-link {
+  margin-top: 28px;
+}
+
+/* Recruit page */
+.recruit-page {
+  padding-top: var(--header-height);
+}
+
+.recruit-page-hero {
+  padding: 72px 0 64px;
+  background: linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-navy) 60%, #1d4ed8 100%);
+  color: #fff;
+}
+
+.recruit-page-hero-inner {
+  text-align: center;
+}
+
+.recruit-page-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.recruit-page-hero h1 {
+  margin-top: 12px;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.recruit-page-hero-lead {
+  margin-top: 18px;
+  font-size: 0.92rem;
+  line-height: 1.95;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.recruit-page-content {
+  padding: 72px 0 96px;
+  background: var(--color-gray-bg);
+}
+
+.recruit-page-intro {
+  max-width: 42rem;
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--color-muted);
+}
+
+.recruit-job-card {
+  margin-top: 40px;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.recruit-job-card + .recruit-job-card {
+  margin-top: 28px;
+}
+
+.recruit-job-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-navy-dark);
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.recruit-job-table {
+  margin-top: 24px;
+}
+
+.recruit-job-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+.recruit-job-row:last-child {
+  border-bottom: none;
+}
+
+.recruit-job-row dt {
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.recruit-job-row dd {
+  color: var(--color-muted);
+  line-height: 1.9;
+}
+
+.recruit-page-cta {
+  margin-top: 48px;
+  padding: 32px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+
+.recruit-page-cta p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.recruit-page-cta .btn {
+  margin-top: 20px;
+}
+
+.recruit-page-back {
+  display: inline-flex;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .recruit-job-card {
+    padding: 28px 20px;
+  }
+
+  .recruit-job-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
 /* Footer */
 .footer {
   background: var(--color-navy-dark);
